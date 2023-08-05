@@ -1,0 +1,8 @@
+id,name,gender,parent_node_id
+1,Janne,male,0
+2,Simo,male,1
+3,Erja,female,1
+4,Valto,male,2
+5,Hilkka,female,2
+6,Kauko,male,3
+7,Alma,female,3

@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[paperwidth=30cm, paperheight=30cm, left=5mm, top=5mm, right=5mm, bottom=5mm]{geometry}
+
+\usepackage[all]{genealogytree}
+\usepackage{lmodern}
+\gtrset{highlight/.style={pivot,box={colback=yellow!20,no shadow,fuzzy halo}}}
+
+
+%\usetikzlibrary{spy}
+
+\begin{document}
+\begin{tikzpicture}
+\genealogytreeinput[template=database sidewaysportrait, level size=4.5cm]{documents/example.gauss.graph}
+\end{tikzpicture}
+
+\end{document}
