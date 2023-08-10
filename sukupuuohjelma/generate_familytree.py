@@ -1,7 +1,12 @@
 from read_family import read_family
 from tree_class import Tree, Node
 
-def generate_familytree():
+def generate_familytree() -> Node:
+    """Builds a tree structure for the family tree
+
+    Returns:
+        root (Node): root node of the tree
+    """
     family = read_family()
     root = Node(family[0][1], gender="male", generation=0)
     nodes = {family[0][0]: root}

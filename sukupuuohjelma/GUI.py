@@ -3,7 +3,13 @@ from PyQt6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, \
     QLineEdit, QPushButton, QMenuBar, QMenu, QLabel, QGridLayout, QVBoxLayout, QTextEdit, \
         QTableWidget
 from PyQt6.QtWebEngineWidgets import QWebEngineView
+
 class GUI(QMainWindow):
+    """Generates the GUI
+
+    Args:
+        QMainWindow (class): Inherits from QMainWindow
+    """
     def __init__(self):
         super(QMainWindow, self).__init__()
 

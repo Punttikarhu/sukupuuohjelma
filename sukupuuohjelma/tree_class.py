@@ -2,7 +2,18 @@ from anytree import Node
    
 class Tree:
     @staticmethod
-    def find_subnodes(family: list, root_node: Node, root_node_id: int, nodes: dict):
+    def find_subnodes(family: list, root_node: Node, root_node_id: int, nodes: dict) -> dict:
+        """Finds subnodes for root node
+
+        Args:
+            family (list): list of family information
+            root_node (Node): root node
+            root_node_id (int): id of root node
+            nodes (dict): dict of nodes
+
+        Returns:
+            nodes (dict): _description_
+        """
         for row in family:
             node_id = row[0]
             name = row[1]

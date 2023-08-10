@@ -13,7 +13,14 @@ def calculateExtras(generations: list) -> list:
             extras.append(i-1)
     return extras  
 
-def generate_tex(names, genders, generations):
+def generate_tex(names: list, genders: list, generations: list) -> None:
+    """Generates tex file
+
+    Args:
+        names (list): names in family tree
+        genders (list): genders in family tree
+        generations (list): generations in family tree
+    """
     extras = calculateExtras(generations)
     with open("documents\example.gauss.graph.tex", "w") as f:
         f.write("sandclock{ \n \t child{\n")

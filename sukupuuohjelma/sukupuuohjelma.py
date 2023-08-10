@@ -7,6 +7,8 @@ from generate_tex import generate_tex
 from GUI import GUI
         
 if __name__ == "__main__":
+    """starts the program
+    """
     
     root = generate_familytree()
     names = [node.name for node in PreOrderIter(root)]
